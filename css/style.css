@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color:#1e7c1e;
+    --white-color:#fff;
+    --dark-color:#1e1c2a;
+}
+
+body {
+    color: var(--dark-color);
+    background: var(--white-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #000;
+    width: 100%;
+    background: var(--white-color);
+    transition: all 0.5s;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--dark-color);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navbar ul li a {
+    color: var(--dark-color);
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--dark-color);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+    background: var(--primary-color);
+}

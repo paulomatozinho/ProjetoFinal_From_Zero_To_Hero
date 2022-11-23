@@ -10,9 +10,9 @@
 }
 
 :root {
-    --primary-color:#1e7c1e;
-    --white-color:#fff;
-    --dark-color:#1e1c2a;
+    --primary-color: #1e7c1e;
+    --white-color: #fff;
+    --dark-color: #1e1c2a;
 }
 
 body {
@@ -96,7 +96,7 @@ body {
 }
 
 .home-text .text-h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
@@ -106,7 +106,7 @@ body {
 }
 
 .btn-login {
-    padding: 10px 30px;
+    padding: 10px 15px;
     background: var(--primary-color);
     color: var(--white-color);
     border-radius: 10px;
@@ -154,4 +154,30 @@ body {
 
 #form h2 {
     text-align: center;
+}
+
+@media (max-width: 785px) {
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white-color);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
 }

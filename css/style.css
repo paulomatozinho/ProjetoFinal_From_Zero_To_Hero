@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 40px;
+    padding: 18px 10%;
     box-shadow: 0 0.1rem 0.5rem #000;
     width: 100%;
     background: var(--white-color);
@@ -45,7 +45,7 @@ body {
 .navbar ul {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .navbar ul li a {
@@ -81,7 +81,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 10%;
 }
 
@@ -105,6 +105,22 @@ body {
     margin-bottom: 4rem;
 }
 
+.btn-login {
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.btn-login:hover {
+    color: var(--primary-color);
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+    transition: all 0.5s;
+}
+
 .btn {
     padding: 15px 45px;
     background: var(--primary-color);
@@ -120,4 +136,18 @@ body {
 
 .home-img {
     width: 100%;
+}
+
+/*Formulário*/
+
+.formulario {
+    width: 768px;
+    margin: 0 auto;
+}
+
+#form {
+    background-color: #ccc;
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-shadow: 0 0 15px #000;
 }

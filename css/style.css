@@ -144,6 +144,30 @@ body {
     width: 100%;
 }
 
+/*Tabela*/
+.table {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+caption {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    border: 3px solid #ccc;
+    padding: 10px;
+}
+
 /*Formulário*/
 .formulario {
     background: var(--color-dark1);
@@ -153,6 +177,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .content {
     background-color: var(--color-dark2);
     padding: 2rem;

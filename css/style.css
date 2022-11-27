@@ -147,29 +147,37 @@ body {
 
 .home-img {
     width: 100%;
+    flex: 1;
 }
 
 /*Tabela*/
 #table {
-    background-color: red;
+    margin: 20px auto;
+}
+
+.table-container {
+    overflow: hidden;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 caption {
+    margin-bottom: 20px;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
 th {
     text-align: left;
+    font-size: 15px;
 }
 
 th,
 td {
-    border: 3px solid #ccc;
+    border: 1px solid #000;
     padding: 10px;
 }
 

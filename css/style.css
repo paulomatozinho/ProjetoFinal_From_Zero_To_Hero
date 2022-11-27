@@ -251,18 +251,15 @@ button[type="submit"] {
 }
 
 .footer {
-    width: 100%;
-    /* min-height: 10px; */
-    padding: 20px 80px;
-    margin: 0;
     text-align: center;
     background: var(--primary-color);
+    padding: 34px;
 }
 
 .footer p {
+    font-size: 17px;
     color: var(--white-color);
-    margin: 20px auto;
-    padding: 20px auto;
+    letter-spacing: 1px;
 }
 
 

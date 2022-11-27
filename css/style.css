@@ -184,6 +184,7 @@ td {
 }
 
 .content {
+    margin-top: 3rem;
     height: 100vh;
     background-color: var(--color-dark2);
     padding: 2rem;
@@ -239,6 +240,21 @@ button[type="submit"] {
     color: var(--white-color);
     cursor: pointer;
     transition: .3s;
+}
+
+.footer {
+    width: 100%;
+    /* min-height: 10px; */
+    padding: 20px 80px;
+    margin: 0;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+.footer p {
+    color: var(--white-color);
+    margin: 20px auto;
+    padding: 20px auto;
 }
 
 

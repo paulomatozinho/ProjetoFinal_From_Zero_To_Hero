@@ -183,19 +183,18 @@ td {
 
 /*Formulário*/
 .formulario {
-    background: var(--color-dark1);
     color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .content {
-    margin-top: 3rem;
+ 
+    margin: 20px auto;
     height: 100vh;
-    background-color: var(--color-dark2);
-    padding: 2rem;
+    background-color: #ccc;
+    padding: 1rem;
     border-radius: 10px;
     min-width: 30%;
     overflow: auto;
@@ -243,7 +242,8 @@ button[type="submit"] {
     outline: none;
     border: none;
     border-radius: 5px;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+   
     background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
@@ -253,7 +253,7 @@ button[type="submit"] {
 .footer {
     text-align: center;
     background: var(--primary-color);
-    padding: 34px;
+    padding: 20px;
 }
 
 .footer p {

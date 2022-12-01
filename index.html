@@ -37,7 +37,9 @@
                 <li class="nav-item">
                     <a href="#">Contato</a>
                 </li>
-                <i class='bx bx-log-in'></i>
+                <a href="login.html">
+                    <i class='bx bx-log-in'></i>
+                </a>
             </ul>
 
             <div class="menu">
@@ -70,7 +72,7 @@
         <div class="table-container">
             <table>
                 <caption>
-                   Monte seu cardádio com base na tabela modelo
+                    Monte seu cardádio com base na tabela modelo
                 </caption>
                 <thead>
                     <tr>
@@ -157,22 +159,23 @@
             <h2>Formulário</h2>
             <form id="form">
                 <div>
-                    <input class="inputs required" type="text" placeholder="Digite seu nome">
+                    <input class="inputs required" type="text" placeholder="Digite seu nome" required maxlength="25">
                     <span class="span-required">Nome deve contém no mínimo 3 caracteres</span>
                 </div>
                 <div>
-                    <input class="inputs required" type="text" placeholder="Digite seu email">
+                    <input class="inputs required" type="email" placeholder="Digite seu email" required maxlength="25">
                     <span class="span-required">Informe um email válido</span>
                 </div>
 
                 <div>
-                    <input class="inputs required" type="password" placeholder="Senha">
+                    <input class="inputs required" type="password" placeholder="Senha" required minlength="4"
+                        maxlength="8">
                     <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span>
                 </div>
 
                 <div>
-                    <input class="inputs required" type="password" placeholder="Repita sua senha">
-                    <span class="span-required">As senhas devem ser compatíveis</span>
+                    <input id="cpf_digitado" class="inputs required" type="text" placeholder="Digite seu CPF" >
+                    <span class="span-required">Digite um CPF válido</span>
                 </div>
 
                 <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10"
@@ -198,7 +201,7 @@
 
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="validacao()">Enviar</button>
             </form>
         </div>
     </section>

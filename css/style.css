@@ -193,7 +193,7 @@ td {
  
     margin: 20px auto;
     height: 100vh;
-    background-color: #ccc;
+    background-color: var(--color-dark2);
     padding: 1rem;
     border-radius: 10px;
     min-width: 30%;
@@ -219,9 +219,7 @@ td {
     padding: 8px 5px;
     outline: none;
     border-radius: 5px;
-    background-color: var(--color-dark1);
     border: 2px solid var(--color-dark1);
-    color: var(--white-color);
     width: 100%;
     transition: .3s;
 }

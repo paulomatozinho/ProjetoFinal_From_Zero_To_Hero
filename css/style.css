@@ -150,6 +150,19 @@ body {
     flex: 1;
 }
 
+/*Banner*/
+#carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 50px;
+}
+
+#carrossel img {
+    width: 500px;
+    border-radius: 5px;
+}
+
 /*Tabela*/
 #table {
     margin: 20px auto;
@@ -190,7 +203,7 @@ td {
 }
 
 .content {
- 
+
     margin: 20px auto;
     height: 100vh;
     background-color: var(--color-dark2);
@@ -241,7 +254,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     /* margin-top: 1rem; */
-   
+
     background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;

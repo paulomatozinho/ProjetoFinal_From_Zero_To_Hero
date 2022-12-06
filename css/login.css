@@ -25,7 +25,7 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(38, 187, 233);
+    background-color: #ccc;
     width: 250px;
     height: 500px;
     border-radius: 20px;

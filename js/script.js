@@ -7,11 +7,27 @@ menu.addEventListener('click', () => {
     navMenu.classList.toggle('ativo');
 })
 
-// Validação Formulário
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const span = document.querySelectorAll('.span-required');
+//Carrossel
+let trocaImagem = 5000;
 
+function banner1() {
+    document.getElementById("banner").src = "img/img1.jpg";
+    setTimeout("banner2()", trocaImagem);
+}
+
+function banner2() {
+    document.getElementById("banner").src = "img/img2.jpg";
+    setTimeout("banner3()", trocaImagem);
+}
+
+function banner3() {
+    document.getElementById("banner").src = "img/img3.jpg";
+    setTimeout("banner1()", trocaImagem);
+}
+
+
+
+// Validação do CPF
 function validacao() {
     console.log('iniciando validacao');
     let cpf = document.getElementById('cpf_digitado').value;

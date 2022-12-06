@@ -17,7 +17,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body onload="banner1()";>
     <!-- Header -->
     <header>
         <nav class="navbar">
@@ -66,6 +66,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Banner -->
+    <section>
+        <div id="carrossel">
+            <img src="img/img1.jpg" alt="Primeira imagem do carrossel" id="banner">
+        </div>
+    </section>
 
     <!-- Tabela -->
     <section id="table">
@@ -159,7 +166,7 @@
             <h2>Formulário</h2>
             <form id="form">
                 <div>
-                    <input class="inputs required" type="text" placeholder="Digite seu nome" required maxlength="25">
+                    <input class="inputs required" type="text" placeholder="Digite seu nome" required minlength="3" maxlength="25">
                     <span class="span-required">Nome deve contém no mínimo 3 caracteres</span>
                 </div>
                 <div>

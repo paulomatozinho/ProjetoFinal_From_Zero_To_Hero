@@ -1,2 +1,6 @@
-let titulo = document.querySelector('h1');
-titulo.textContent = 
+let recuperaSenha = document.getElementById('btn');
+
+recuperaSenha.onclick = () => {
+    alert('Verifique seu email para redefinir sua senha.');
+    // console.log(btnSenha)
+};

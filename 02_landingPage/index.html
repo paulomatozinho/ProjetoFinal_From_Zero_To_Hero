@@ -17,7 +17,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body onload="banner1()";>
+<body onload="banner1()" ;>
     <!-- Header -->
     <header>
         <nav class="navbar">
@@ -29,13 +29,13 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#table">Dieta</a>
+                    <a href="#about">Dieta</a>
                 </li>
                 <li class="nav-item">
                     <a href="#carrossel">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Contato</a>
+                    <a href="#formulario">Contato</a>
                 </li>
                 <a href="login.html">
                     <i class='bx bx-log-in'></i>
@@ -67,110 +67,84 @@
         </section>
     </main>
 
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/img4.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Saiba Mais</h2>
+            <h5>Um estilo de vida saudável</h5>
+            <p>A Dieta Mediterrânica foi reconhecida pela UNESCO como Património Cultural
+                Imaterial da Humanidade
+                de Portugal, Espanha,
+                Marrocos, Itália, Grécia,
+                Chipre e Croácia, em 4
+                de dezembro de 2013.</p>
+            <!-- <a href="CV Frontend.pdf" class="btn">Baixar CV</a> -->
+        </div>
+    </section>
+
     <!-- Banner -->
-    <section>
+
+    <section id="menu">
+        <table>
+            <caption>
+                Tabela do IMC
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>MENOR QUE 18,5</th>
+                    <th>Abaixo do Peso</th>
+                </tr>
+                <tr>
+                    <th>ENTRE 18,5 E 24,9</th>
+                    <th>Peso Normal</th>
+                </tr>
+                <tr>
+                    <th>ENTRE 25,0 E 29,9</th>
+                    <th>Sobrepeso</th>
+                </tr>
+                <tr>
+                    <th>ENTRE 30,0 E 39,9</th>
+                    <th>Obesidade grau I</th>
+                </tr>
+                <tr>
+                    <th>MAIOR QUE 40,0</th>
+                    <th>Obesidade grau II</th>
+                </tr>
+            </tbody>
+        </table>
+
         <div id="carrossel">
             <img src="img/img1.jpg" alt="Primeira imagem do carrossel" id="banner">
         </div>
     </section>
 
-    <!-- Tabela -->
-    <section id="table">
-        <div class="table-container">
-            <table>
-                <caption>
-                    Monte seu cardádio com base na tabela modelo
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Grupos Alimentares</th>
-                        <th>2ª feira</th>
-                        <th>3ª feira</th>
-                        <th>4ª feira</th>
-                        <th>5ª feira</th>
-                        <th>6ª feira</th>
-                        <th>Sábado</th>
-                        <th>Domingo</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>Carboidratos</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Leguminosas</th>
-                        <th>Peixe</th>
-                        <th>Ovos</th>
-                        <th>Frango</th>
-                        <th>Carne Bovina</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Prot. animal</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Legumes</th>
-                        <th>Cenoura</th>
-                        <th>Beterraba</th>
-                        <th>Pimentão</th>
-                        <th>Inhame  </th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Verduras</th>
-                        <th>Alface</th>
-                        <th>Couve</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Frutas</th>
-                        <th>Banana</th>
-                        <th>Maça</th>
-                        <th>Morango</th>
-                        <th>Mamão</th>
-                        <th>Abacate</th>
-                        <th>Pêra</th>
-                        <th>Melancia</th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    
 
     <!-- Formulário -->
-    <section class="formulario">
+    <section id="formulario">
         <div class="content">
-            <h2>Formulário</h2>
+            <h2>Formulário de Cadastro</h2>
             <form id="form">
                 <div>
-                    <input class="inputs required" type="text" placeholder="Digite seu nome" required minlength="3" maxlength="25">
+                    <label for="name"></label>
+                    <input id="name" class="inputs required" type="text" placeholder="Digite seu nome" required minlength="3"
+                        maxlength="25">
                     <span class="span-required">Nome deve contém no mínimo 3 caracteres</span>
                 </div>
                 <div>
-                    <input class="inputs required" type="email" placeholder="Digite seu email" required maxlength="25">
+                    <label for="email"></label>
+                    <input id="email" class="inputs required" type="email" placeholder="Digite seu email" required maxlength="25">
                     <span class="span-required">Informe um email válido</span>
                 </div>
 
@@ -181,7 +155,7 @@
                 </div>
 
                 <div>
-                    <input id="cpf_digitado" class="inputs required" type="text" placeholder="Digite seu CPF" >
+                    <input id="cpf_digitado" class="inputs required" type="text" placeholder="Digite seu CPF, somente numeros " required>
                     <span class="span-required">Digite um CPF válido</span>
                 </div>
 
@@ -208,7 +182,7 @@
 
                 </div>
 
-                <button type="submit" onclick="validacao()">Enviar</button>
+                <button type="submit" >Enviar</button>
             </form>
         </div>
     </section>

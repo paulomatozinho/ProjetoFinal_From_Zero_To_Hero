@@ -150,22 +150,71 @@ body {
     flex: 1;
 }
 
+section {
+    padding: 50px 15%;
+}
+
+.about {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: var(--second-color);
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+    font-size: var(--p-font);
+    margin-bottom: 45px;
+}
+
+
+#menu {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 1rem;
+}
+
 /*Banner*/
 #carrossel {
     display: flex;
     align-items: center;
     justify-content: center;
-   margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 #carrossel img {
-    width: 500px;
+    width: 100%;
     border-radius: 5px;
 }
 
 /*Tabela*/
 #table {
     margin: 20px auto;
+    width: 50%;
 }
 
 .table-container {
@@ -183,10 +232,16 @@ caption {
     font-weight: 700;
 }
 
+thead {
+    color: #1e7c1e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 th {
     text-align: left;
     font-size: 12px;
-    
+
 }
 
 th,
@@ -196,15 +251,11 @@ td {
 }
 
 /*Formulário*/
-.formulario {
+#formulario {
     color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .content {
-
     margin: 20px auto;
     height: 100vh;
     background-color: var(--color-dark2);
@@ -227,13 +278,14 @@ td {
 
 .span-required {
     display: none;
+    color: red;
 }
 
 .inputs {
     padding: 8px 5px;
     outline: none;
     border-radius: 5px;
-    border: 2px solid var(--color-dark1);
+    border: 3px solid var(--color-dark1);
     width: 100%;
     transition: .3s;
 }
@@ -254,23 +306,24 @@ button[type="submit"] {
     outline: none;
     border: none;
     border-radius: 5px;
-    /* margin-top: 1rem; */
-
     background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
     transition: .3s;
+    width: 50%;
+    align-self: center;
+    margin-top: 2rem;
 }
 
 .footer {
     text-align: center;
-    background: var(--primary-color);
+    background: #ccc;
     padding: 20px;
 }
 
 .footer p {
     font-size: 17px;
-    color: var(--white-color);
+    color: #000;
     letter-spacing: 1px;
 }
 

@@ -26,15 +26,34 @@ function banner3() {
 }
 
 
-
 // Validação do CPF
-function validacao() {
-    console.log('iniciando validacao');
-    let cpf = document.getElementById('cpf_digitado').value;
-    console.log(cpf.length);
-    if (cpf.length == 11) {
-        console.log('cpf ok')
-    } else {
-        console.log('cpf invalido')
+
+
+let form = document.getElementById('form');
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+
+let spanMensagem = document.getElementsByClassName('span-required');
+
+//validar quando usuário sai do campo
+name.onblur = function (event) {
+    if (event.target.value.length < 3) {
+        spanMensagem.textContent = "tudo ok";
+        spanMensagem.style.display = 'block';
     }
 }
+
+
+
+
+
+// function validacao() {
+//     console.log('iniciando validacao');
+//     let cpf = document.getElementById('cpf_digitado').value;
+//     console.log(cpf.length);
+//     if (cpf.length == 11) {
+//         alert('Suas informações foram enviadas')
+//     } else {
+//         alert('cpf invalido')
+//     }
+// }

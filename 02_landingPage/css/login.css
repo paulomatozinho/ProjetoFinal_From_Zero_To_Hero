@@ -92,7 +92,7 @@ form>input[type=submit] {
     cursor: pointer;
 }
 
-form>a.btn {
+form>a#btn {
     display: block;
     text-align: center;
     font-size: 1rem;

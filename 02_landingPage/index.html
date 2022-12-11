@@ -18,6 +18,7 @@
 </head>
 
 <body onload="banner1()" ;>
+
     <!-- Header -->
     <header>
         <nav class="navbar">
@@ -67,13 +68,13 @@
         </section>
     </main>
 
+    <!-- Sobre -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/img4.jpg" alt="">
+            <img src="img/img4.jpg" alt="prato com alimentos">
         </div>
 
         <div class="about-text">
-            <h2>Saiba Mais</h2>
             <h5>Um estilo de vida saudável</h5>
             <p>A Dieta Mediterrânica foi reconhecida pela UNESCO como Património Cultural
                 Imaterial da Humanidade
@@ -84,7 +85,7 @@
         </div>
     </section>
 
-    <!-- Banner e Tabela -->
+    <!-- Tabela e Carrossel -->
     <section id="menu">
         <table>
             <caption>
@@ -150,7 +151,7 @@
                     </div>
                     <p>Minha Saúde melhorou muito depois que adotei a Dieta Mediterrânea</p>
                 </div>
-    
+
                 <div class="col">
                     <div class="testimonial">
                         <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="imagem de um homem">
@@ -163,9 +164,10 @@
                         <i class='bx bx-star'></i>
                         <i class='bx bx-star'></i>
                     </div>
-                    <p>Sempre busco seguir as dicas desse site, são muito boas e trazem ótimos beneficios para a saúde</p>
+                    <p>Sempre busco seguir as dicas desse site, são muito boas e trazem ótimos beneficios para a saúde
+                    </p>
                 </div>
-    
+
                 <div class="col">
                     <div class="testimonial">
                         <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="imagem de uma mulher">
@@ -181,7 +183,7 @@
                     <p>Indico para todos essa culinária, vale muito a pena, estou amando.</p>
                 </div>
             </div>
-        </div>      
+        </div>
     </section>
 
     <!-- Formulário -->
@@ -189,33 +191,32 @@
         <div class="content">
             <h2>Formulário de Cadastro</h2>
             <form id="form">
+
                 <div>
                     <label for="name"></label>
-                    <input id="name" class="inputs required" type="text" placeholder="Digite seu nome" required
-                        minlength="3" maxlength="25">
-                    <span class="span-required">Nome deve contém no mínimo 3 caracteres</span>
+                    <input id="name" class="inputs required" type="text" placeholder="Digite seu nome" required minlength="3" maxlength="25">
+                      <span id="valida"></span>  
                 </div>
+
                 <div>
                     <label for="email"></label>
                     <input id="email" class="inputs required" type="email" placeholder="Digite seu email" required
                         maxlength="25">
-                    <span class="span-required">Informe um email válido</span>
                 </div>
 
                 <div>
                     <input class="inputs required" type="password" placeholder="Senha" required minlength="4"
                         maxlength="8">
-                    <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span>
                 </div>
 
                 <div>
                     <input id="cpf_digitado" class="inputs required" type="text"
                         placeholder="Digite seu CPF, somente numeros " required>
-                    <span class="span-required">Digite um CPF válido</span>
                 </div>
 
                 <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10"
-                    placeholder="Envie sua dúvida ou sugestão para nós"></textarea>
+                    placeholder="Envie sua dúvida ou sugestão para nós">
+                </textarea>
 
                 <p>Interesse:</p>
 
@@ -237,7 +238,7 @@
 
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="validacao()">Enviar</button>
             </form>
         </div>
     </section>

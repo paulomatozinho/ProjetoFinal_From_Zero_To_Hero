@@ -1,5 +1,3 @@
-let 
-
 
 let recuperaSenha = document.getElementById('btn');
 
